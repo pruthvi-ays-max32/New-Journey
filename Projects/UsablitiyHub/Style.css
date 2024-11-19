@@ -1,0 +1,331 @@
+/* Importing fonts and doing initial Setup */
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500&family=Roboto:wght@400;700&display=swap');
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    /* background: #000; */
+}
+
+/* Utility/Global Color Defined for Web Site*/
+:root {
+   --primary-text-color:#183b56;
+   --secondary-text-color:#577592;
+   --accent-color:#2294ed;
+   --accent-color-dark: #1d69a3;
+   --padding-inline-section: 20px;
+}
+
+body {
+    font—family: 'Poppins' , sans-serif;
+    color: var(--primary-text-color)
+}
+
+/* Special Features defining for each tag*/
+
+h1{
+    font-size: 3rem;
+}
+
+h2{
+    font-size: 2rem;
+}
+
+h3{
+    font-size: 1.5rem;
+}
+
+p{
+    font-family: 'Roboto', sans-serif;
+    font-size: 1.25rem;
+    color: var(--secondary-text-color);
+    line-height: 1.8rem;
+}
+
+a{
+    text-decoration: none;
+    display: inline-block;
+}
+
+ul{
+    list-style: none;
+}
+
+.small-bold-text{
+    font-weight: 700;
+    font-size: 1rem;
+}
+
+/* making Flex easy to use */
+.flex{
+    display: flex;
+    align-items: center;
+}
+
+.secondary-btn{
+    border: 0.5px solid var(--secondary-text-color);
+    border-radius: 6px;
+    font-weight: 700;
+    padding: 12px 24px;
+    color: var(--primary-text-color) !important;
+    transition: 0.2s ease-out;
+    
+}
+.secondary-btn:hover{
+    border-color: var(--accent-color);
+    color: var(--accent-color) !important;
+}
+
+.primary-btn{
+    background-color: var(--accent-color);
+    border-radius: 6px;
+    font-weight: 700;
+    color: white !important;
+    padding: 12px 24px;
+    box-shadow: 0 0 2px var(--secondary-text-color);
+    transition: 0.2s ease-out;
+}
+
+.primary-btn:hover{
+    background-color: var(--accent-color-dark);
+}
+
+/* Making a proper container for whole websites defining fixed width and margin padding etc. */
+
+.container{
+    max-width: 1180px;
+    margin-inline: auto;
+    padding-inline: var(--padding-inline-section);
+}
+
+/* Banner Text */
+.top-banner{
+    background-color: #4fb3d4;
+    background-image: url('Assets/asset\ 28.png');
+    background-size: 300px;
+    /* background-repeat: no-repeat; */
+}
+
+.banner-text{
+    padding: 15px 30px;
+    color: white;
+    text-align: center;
+}
+
+/* Header Section */
+.nav-container{
+    margin-top: 15px;
+    justify-content: space-between;
+}
+
+.logo-img{
+    width: 200px;
+}
+.nav-links{
+    flex-basis: 730px;
+}
+.nav-links ul{
+    justify-content: end;
+    gap: 40px;
+}
+
+.hower-links{
+    color: var(--primary-text-color);
+    transition: 0.2s ease-out;
+}
+
+.hower-links:hover{
+    color: var(--accent-color);
+}
+
+/* Header Part */
+
+header{
+    padding: 50px var(--padding-inline-section) 0;
+}
+
+.header-section{
+    justify-content: center;
+    gap: 50px;
+}
+
+.right-header img{
+   width: 600px;
+}
+
+.left-header{
+    max-width: 40vw;
+}
+
+.left-header h1{
+    margin-top: 20px;
+}
+
+.get-started-btn{
+    margin-top: 20px;
+}
+
+/* Companies Section  */
+
+.companies-header{
+    color: var(--primary-text-color);
+    margin: 30px 0;
+    text-align: center;
+}
+
+.logos{
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.logo{
+   height: 46px;
+}
+
+
+/* Features Section */
+
+.features-section{
+    padding: 80px var(--padding-inline-section) 0;
+    background-image: url('Assets/asset\ 29.svg');
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.features-header{
+    text-align: center;
+}
+
+.features-header h2{
+    margin-bottom: 20px;
+}
+
+
+.features-area{
+    margin-top: 20px;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    gap: 40px;
+}
+
+.features-card{
+    flex-direction: column;
+    row-gap: 20px;
+    max-width: 30%;
+    text-align: center;
+}
+
+.features-card img{
+    width: 50px;
+}
+
+/* Big Feature */
+
+.bigfeature {
+    justify-content: center;
+    padding: 60px var(--padding-inline-section) 0;
+    column-gap:50px;
+}
+
+.bigfeatureimage img{
+  width: 500px;
+}
+
+/* Examples  */
+
+.example-section-header{
+   flex-direction: column;
+   gap: 20px;
+}
+
+.example-card{
+    position: relative;
+    min-height: 300px;
+    width: 23%;
+    background: black;
+    background: linear-gradient(rgb(0,0,0,0.1), rgb(0,0,0,0.8)) ,url('Assets/asset\ 30.svg');
+    transition: 0.2s ease-out;
+}
+
+.example-card:hover{
+    box-shadow: 0 0 10px #888;
+}
+
+.examples {
+    justify-content: center;
+    gap: 20px;
+    margin: 30px 0;
+}
+
+.card-text{
+    position: absolute;
+    bottom: 20px;
+    left: 20px;
+    right: 20px;
+    color: white;
+}
+
+.example-card:nth-child(2){
+    background: linear-gradient(rgb(0,0,0,0.1), rgb(0,0,0,0.8)) ,url('Assets/asset\ 14.svg');
+}
+
+.example-card:nth-child(3){
+    background: linear-gradient(rgb(0,0,0,0.1), rgb(0,0,0,0.8)) ,url('Assets/asset\ 13.svg');
+}
+
+.example-card:nth-child(4){
+    background: linear-gradient(rgb(0,0,0,0.1), rgb(0,0,0,0.8)) ,url('Assets/asset\ 12.svg');
+}
+
+.example-card:nth-child(1){
+    background: linear-gradient(rgb(0,0,0,0.1), rgb(0,0,0,0.8)) ,url('Assets/asset\ 11.svg');
+}
+
+/* CTA SECTION */
+.cta-section-container{
+    flex-direction: column;
+    gap: 30px;
+    color: white;
+}
+
+.cta-section{
+    background-color: #183b54;
+    padding: 120px var(--padding-inline-section) 80px;
+}
+
+.cta-section-container p{
+    color: white;
+    margin-top: 20px;
+}
+
+/* FOOTER SECTION */
+.footer-links{
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 20px;
+}
+
+.footer-container{
+    justify-content: space-between;
+    gap: 20px;
+    align-items: flex-start;
+}
+
+footer{
+    background-color: #ebf2fa;
+    padding: 80px;
+}
+
+/* SubFooter Section */
+.sub-footer-links{
+    justify-content: center;
+    gap: 20px;
+}
+
+.sub-footer{
+    background-color: #b9cde4;
+    padding: var(--padding-inline-section);
+
+}
