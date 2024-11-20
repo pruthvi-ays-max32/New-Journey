@@ -1,0 +1,41 @@
+
+/*  "*" -> it denotes Universal selector. */
+* {
+  font-family: cursive;
+}
+
+
+body {
+  font-size: 24px;
+  background-color: red;
+}
+
+
+/* Grouping of multiple classes */
+#first, #second {
+  font-style:italic;
+  color: whitesmoke;
+}
+
+.highlight {
+  color: rgb(192, 226, 43);
+}
+
+.secondclass{
+  background-color: black;
+}
+
+
+/*
+  Nested CSS -> to assign a seperate style to nested element
+      #class_name > elementName > subElement_name > .... so on
+
+  Specificity Order :
+      id > class > element
+
+      !important -> add to the end of value means it will definitely apply.
+
+  Pseudo Selector
+      element:hover {} -> when we hover on a element.
+  
+*/
