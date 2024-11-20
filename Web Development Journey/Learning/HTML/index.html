@@ -1,0 +1,308 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- title is used to diplay the tab name -->
+    <title> UpSkill Mafia MERN STACK </title>
+</head>
+<body>
+    <!-- Headings In HTML -->
+    <h1>Hello World...</h1>
+    <h2>Hello World...</h2>
+    <h3>Hello World...</h3>
+    <h4>Hello World...</h4>
+    <h5>Hello World...</h5>
+    <h6>Hello World...</h6>
+
+    <!-- Paragraph In HTML 
+        <p> -> Paragraph Tag
+            <strong> -> for making bold
+                <b> -> for making bold
+                    <em> -> for making italic
+                        <i> -> for making italic
+                            <small> -> for making small font size rather than other words
+    -->
+
+    <h3> Paragraph In HTML</h3>
+    <p> 
+        <em>Neend</em> <strong>churai</strong>meri kisne woh sanam tu ne tu ne ooo chain churaya mera kisne woh sanam tu ne tu ne
+        Neend <strong>churai</strong> meri kisne woh sanam tu ne tu ne ooo chain churaya mera kisne woh sanam tu ne tu ne
+        Neend <strong>churai</strong> meri kisne woh sanam tu ne tu ne ooo chain churaya mera kisne woh sanam tu ne tu ne
+        Neend <strong>churai</strong> meri kisne woh sanam tu ne tu ne ooo chain churaya mera kisne woh sanam tu ne tu ne
+     </p>
+
+
+     <!-- Add Links in HTML 
+        <a> -> a tag  
+
+            Attributes :
+
+            href=""  ->   An attribute In which we provide the actual link where it should be redirected.
+            target="" -> An attribute which help browser where it should opens the link.
+                if value is 
+                    "_blank" -> it will open in another tab
+                    "_parent" / "_self" / "_top" -> it will open in same/current tab
+                    
+                if we didn't mention the target attribute it will open in same tab
+     -->
+
+     <h3> link In HTML</h3>
+
+        <a href="http://google.com">Link 1 : Google</a>
+        <a href="http://x.com" target="_top">Link 2 : Twitter</a>
+
+
+    <!-- For Adding the Line Breaks we use 
+            <br> -> used for line break
+    -->
+            <br>
+
+
+    <!-- For Adding the Image 
+    
+            <img> -> this tag is used to add image to website
+
+            Attributes : 
+                1. src -> here we will add the path of image which we have to show on browser
+                2. alt -> here we will add the text which will be shown on browser if the image is not found in the src path.
+    -->
+
+    <h3> Image In HTML</h3>
+            <img src="" alt="Computer Image">
+
+
+    <!-- For Adding Lists in our Website :
+            1. Ordered List     <ol> tag used 
+            2. Unordered List   <ul> tag used
+
+                <li> -> tag used for list items    
+
+    -->
+                    <h3> Lists In HTML</h3>
+
+    <ol>
+        <li>OrderedItem 1</li>
+        <li>OrderedItem 2</li>
+        <li>OrderedItem 3</li>
+    </ol>
+    <ul>
+        <li>UnOrderedItem 1</li>
+        <li>UnOrderedItem 2</li>
+        <li>UnOrderedItem 3</li>
+    </ul>
+
+    <!-- Tables In HTML 
+        <table>  -> tag used to add table
+            <th> -> for table heading
+                <tr> -> for table row
+
+    
+    -->
+    <h3> Tables In HTML</h3>
+
+    <table>
+        <thead>
+            <tr>
+                <th>Name</th>
+                <th>Class</th>
+                <th>City</th>
+            </tr>     
+        </thead>
+        <tbody>
+            <tr>
+                <td>Pruthviraj</td>
+                <td>BE</td>
+                <td>Pune</td>
+            </tr>
+            <tr>
+                <td>Pratiksha</td>
+                <td>BE</td>
+                <td>Pune</td>
+            </tr>
+            <tr>
+                <td>Praneeth</td>
+                <td>BE</td>
+                <td>Pune</td>
+            </tr>
+            <tr>
+                <td>Panda</td>
+                <td>BE</td>
+                <td>Pune</td>
+            </tr>
+        </tbody>
+    </table>
+
+
+    <!--  DIV In HTML
+      <div> -> used to do the grouping of other tags.
+        it is block level element. 
+        means occupies the whole width of the screen.
+    -->
+        <div>
+            <h3>div In HTML</h3>
+            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Similique distinctio illo reiciendis repellendus sed nostrum voluptatibus commodi officia earum asperiores beatae, porro repellat voluptatem doloribus cupiditate aspernatur id quis error.</p>
+        </div>
+
+        <h3>Span Tag In HTML</h3>
+    <!-- Span tag in HTML
+        <span> -> same as div 
+            it occupies the required width only.
+            it is inline level element. 
+            It continue all the span horizontally not move to next line untill reaches the max length of screen
+
+    -->
+            <span>Instagram</span>
+            <span>FaceBook</span>
+
+            <h3>Forms In HTML</h3>
+            <!-- Forms In HTML
+             <form> -> main container tag used for form
+
+                <label> -> To add label to the input field
+                <input> -> for input field
+                <textarea> ->
+                    for adding input field for paragraph.
+                    it has separate closing tag
+                    Attributes of TextArea :->  
+                            1. cols -> Number of columns means width
+                            2. rows -> Height of textArea
+                    
+                    Attributes :
+                        type :-> text -> specifies what is type of input field
+                        placeholder :-> The PlaceHolder of this input field
+                        name :-> the value which will send to the backend when we submit the form.
+                        value :-> in editing form the value of field is already present that it is.
+
+                    type -> 
+                        1. text -> Normal String
+                        2. email -> apply some validation of email
+                        3. date -> can select the date using calender of giving input
+                        4. number -> only insert numbers validation
+                        5. password -> it will not show what we type inside the field for security purpose
+                        6. checkbox -> for selecting or check mark
+                        7. radio -> for selecting one form multiple
+                        8. select dropdown-> seperate tag not type. 
+                            <select> mutiple options <option> 
+                        9. submit -> for perfoming the form submit operation and convert form in its initial state
+                        10. file -> to select one file
+                        11. file -> to select more than one files attribute mutiple
+            -->
+
+            <form>
+                <label>First Name : </label>
+                <input type="text" placeholder="Enter the Name" name="" value="">
+                <br>
+                <br>
+                <label>Email</label>
+                <input type="email" placeholder="enter the email">
+                <br>
+                <br>
+                <label>Password</label>
+                <input type="password" placeholder="enter the Password">
+                <br>
+                <br>
+                <label>Date OF Birth</label>
+                <input type="date">
+                <br>
+                <br>
+                <label>Moblie Number</label>
+                <input type="number" placeholder="enter the number">
+                <br>
+                <br>
+
+                <label>CheckList</label>
+                <br>
+                <!-- for joining the input checkbox and label associated with it we use "id" attribute in input and "for" attribute in label-->
+                <input id="shop" type="checkbox">
+                <label for="shop">GO TO SHOP</label>
+                <Br>
+                <input id="top" type="checkbox">
+                <label for="top">GO TO Dance</label>
+                <br>
+                <input id="rock" type="checkbox">
+                <label for="rock">GO TO School</label>
+
+                <br>
+                <br>
+                <!-- for selecting multiple choice one select-->
+                 <!--  for selecting one of the multiple we used name attribute here which has same value and group them all otherwise they behave 
+                    same as checkbox.
+                 -->
+                 <label>Gender Radio Buttons</label>
+                <input name="gender" id="male" type="radio">
+                <label for="male">Male</label>
+
+                <input name="gender" id="female" type="radio">
+                <label for="female">Female</label>
+
+                <br>
+                <br>
+                <label> Favourite Cricketer : </label>
+                <select>
+                    <option>Gautam Gambhir</option>
+                    <option>M S Dhoni</option>
+                    <option>Virat Kohli</option>
+                </select>
+                <br>
+                <br>
+
+                <label>Single File</label>
+                <input type="file">
+
+                <br>
+                <br>
+                <label>Multiple Files</label>
+                <input type="file" multiple>
+
+                <br>
+                <br>
+                <input type="submit">
+            </form>
+
+
+            <h3>Audio and Video Tag in HTML</h3>
+            <!-- audio -> main tag  <video> main tag
+                controls is the reason to display it in browser
+                <sourse> -> tag used to define the audio file
+                    attributes : src -> location
+                                type -> type of audio file
+            -->
+            <audio controls>
+                <source src="" type="audio/mp3">
+                browser doesn't support audio element (it will display if audio tag not worked in that browser)
+            </audio>
+
+            <br>
+            <br>
+
+            <video controls>
+                <source src="" type="video/mp4">
+                browser doesn't support video element (it will display if audio tag not worked in that browser)
+            </video>
+
+
+
+            <!--- Newly Introduced Sementic Elements (Containers instead of div) In HTML5 -->
+
+            <!--
+                                Structure of web 
+
+                  < --------              Header               --------  >
+                  < --------              nav                  ---------- >
+
+                  < ----- Section1 ------ >            < --- aside ---- >
+                  < ---- article --- >
+
+
+                  < ---------              Footer              ------- > 
+            -->
+    
+            <!---         Some Extra Points or elements 
+                1. <hr> -> for horizontal line
+                2. <button> -> for adding buttons to the website
+            -->
+</body>
+
+</body>
+</html>
