@@ -1,0 +1,51 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  background-color:antiquewhite;
+}
+
+body{
+  font-family: cursive;
+  text-align: center;
+}
+
+
+.main-container{
+  display: flex;
+  justify-content: space-between;
+}
+
+.tables{
+  width: 600px;
+}
+
+.boxes{
+  width: 500px;
+  padding:10px;
+}
+
+.box{
+  border :2px solid black;
+  margin: 2px;
+  width: 150px;
+  height: 150px;
+}
+
+#box1{
+  background-color: aqua;
+  position: relative;
+  left: 200px; top:20px; 
+}
+
+#box2{
+  background-color:blueviolet;
+  /* position: absolute;
+  bottom: 30px;
+  right: 200px; */
+}
+
+#box3{
+  background-color: chartreuse;
+  position: fixed;
+}

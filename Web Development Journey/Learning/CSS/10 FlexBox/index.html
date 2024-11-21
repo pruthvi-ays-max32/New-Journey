@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Flexbox</title>
+  <link rel="stylesheet" href="Style.css">
+</head>
+<body>
+  <h1> FLEXBOX </h1>
+  <h4>[1D layout for arranging item in row / column.]</h4>
+  <div class="main-container">
+    <div class="flex-container">
+      <table class="tables" border="1">
+        <caption>FLEX CONTAINER</caption>
+        <tr>
+          <th>Flex-Property</th>
+          <th>Possible Values</th>
+          <th>Meaning of Values</th>
+        </tr>
+
+        <tr>
+          <td>flex-direction</td>
+          <td>
+            <ul>
+              <li>row</li>
+              <li>row-reverse</li>
+              <li>column</li>
+              <li>column-reverse</li>
+            </ul>
+          </td>
+          <td>
+            <ul>
+              <li>[ 1 2 3      ]</li>
+              <li>[       3 2 1]</li>
+              <li><pre>
+                1
+                2
+                -
+                -
+              </pre></li>
+              <li><pre>
+                -
+                -
+                2
+                1
+              </pre></li>
+            </ul>
+          </td>
+        </tr>
+
+        <tr>
+          <td>flex-wrap</td>
+          <td>
+            <ul>
+              <li>no-wrap</li>
+              <li>wrap</li>
+              <li>wrap-reverse</li>
+            </ul>
+          </td>
+          <td>
+            <ul>
+              <li>items in flex container will start shrinking when we reduce the size of container.</li>
+              <li>in wrap, items will not shrink and move to the next line.</li>
+              <li>in wrap-reverse, items will start from bottom and move to the upper line.</li>
+            </ul>
+          </td>
+        </tr>
+        <tr>
+          <td>flex-flow</td>
+          <td>[flex-wrap flex-direction]</td>
+          <td>it is combo prop of flex-wrap and flex-direction</td>
+        </tr>
+
+        <tr>
+          <td>Justify-content</td>
+          <td>
+            <ul>
+              <li>space-around</li>
+              <li>space-between</li>
+              <li>space-evenly</li>
+              <li>flex-start</li>
+              <li>flex-end</li>
+              <li>center</li>
+            </ul>
+          </td>
+          <td>It will just specify where the items should be display in the container on x-axis(main axis)</td>
+        </tr>
+
+        <tr>
+          <td>align-items</td>
+          <td>
+            <ul>
+              <li>strech</li>
+              <li>flex-start</li>
+              <li>flex-end</li>
+              <li>center</li>
+            </ul>
+          </td>
+          <td>It will just specify where the items should be display in the container on y-axis(cross axis)</td>
+        </tr>
+
+        <tr>
+          <td>align-content</td>
+          <td>
+            <ul>
+              <li>space-around</li>
+              <li>space-between</li>
+              <li>space-evenly</li>
+              <li>flex-start</li>
+              <li>flex-end</li>
+            </ul>
+          </td>
+          <td>to specify the distance between items on y-axis(cross axis)</td>
+        </tr>
+      </table>
+    </div>
+    <div class="flex-items">
+      <table class="tables1" border="1">
+        <caption>FLEX ITEMS</caption>
+        <tr>
+          <th>Flex-Property</th>
+          <th>Possible Values</th>
+          <th>Meaning of Values</th>
+        </tr>
+
+        <tr>
+          <td>align-self</td>
+          <td>
+            <ul>
+              <li>strech</li>
+              <li>flex-start</li>
+              <li>flex-end</li>
+              <li>center</li>
+            </ul>
+          </td>
+          <td>
+           to align particular flex-item on y-axis(cross axis) inside container.
+          </td>
+        </tr>
+
+        <tr>
+          <td>Order</td>
+          <td>to override the default order of elements.</td>
+          <td>default order of all childs : 0 , Higher Order == last occurance at right.</td>
+        </tr>
+
+        <tr>
+          <td>flex-grow</td>
+          <td>Default value = 0</td>
+          <td>high flex-grow value high space occupies.(takes all remaining space of container width.)</td>
+        </tr>
+
+        <tr>
+          <td>flex-shrink</td>
+          <td>Default value = 1</td>
+          <td>when we start reducing the screen size then first whose flex-shrink value is higher that will start shrinking then others.</td>
+        </tr>
+
+        <tr>
+          <td>flex-basis</td>
+          <td>-</td>
+          <td>to define initial width of one or more childs.</td>
+        </tr>
+
+        <tr>
+          <td>flex</td>
+          <td>
+            [flex-grow flex-shrink flex-basis]
+          </td>
+          <td>combo of 3 values.</td>
+        </tr>
+      </table>
+
+      <div class="boxes">
+        <div class="box" id="box1"> BOX 1</div>
+        <div class="box" id="box2"> BOX 2</div>
+        <div class="box" id="box3">BOX 3</div>
+      </div>
+    </div>
+  </div>
+</body>
+</html>

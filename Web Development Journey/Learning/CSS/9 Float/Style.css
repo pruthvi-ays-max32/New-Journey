@@ -1,0 +1,27 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  background-color:antiquewhite;
+}
+
+body{
+  font-family: cursive;
+  text-align: center;
+}
+
+
+.container{
+  border: 2px solid red;
+  height: 300px;
+  width: 800px;
+}
+
+.box{
+  height: 200px;
+  width: 200px;
+  border: 2px solid black;
+  margin: 2px;
+  float: right;
+  /* float:left; */
+}

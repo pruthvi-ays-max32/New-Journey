@@ -1,0 +1,42 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  background-color:antiquewhite;
+}
+
+body{
+  font-family: cursive;
+  text-align: center;
+}
+
+.main-container{
+  display: flex;
+  justify-content: space-around;
+}
+
+ul{
+  list-style-type:none;
+}
+
+.flex-container, .flex-items{
+  width: 45%;
+}
+
+.boxes{
+  display: flex;
+  border: 2px solid black;
+  /* flex-direction: column-reverse; */
+  gap: 2px;
+}
+
+.box{
+  height: 100px;
+  width: 100px;
+  border: 2px solid red;
+}
+
+
+#box2{
+  order: 2;
+}

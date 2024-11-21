@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Position Property</title>
+  <link rel="Stylesheet" href="Style.css">
+
+</head>
+<body>
+  <h1>POSITION PROPERTY</h1>
+  <div class="main-container">
+    <div>
+      <table class="tables" border="1">
+        <caption>Position Property Information</caption>
+        <tr>
+          <th>Property's Value</th>
+          <th>Meaning</th>
+        </tr>
+
+        <tr>
+          <td>Static</td>
+          <td>Elements follow the normal document flow. (top, bottom, z-index etc will not work.)</td>
+        </tr>
+
+        <tr>
+          <td>Relative</td>
+          <td>Elements Position adjusted from its normal position.</td>
+        </tr>
+
+        <tr>
+          <td>Absolute</td>
+          <td>Positiona element relative to the nearest postioned ancestor. Comes above the page.</td>
+        </tr>
+
+        <tr>
+          <td>Fixed</td>
+          <td>Elements Position relative to the viewport. Doesn't move or scroll with page.</td>
+        </tr>
+
+        <tr>
+          <td>z-index</td>
+          <td>Determines the stacking order of elements along the z-axis. +ve value : appear on top, -ve value : appear below of other.</td>
+        </tr>
+      </table>
+    </div>
+    <div class="boxes">
+      <caption>position property example</caption>
+      <div class="box" id="box1">BOX 1</div>
+      <div class="box" id="box2">BOX 2</div>
+      <div class="box" id="box3">BOX 3</div>
+      <div class="box" >BOX 1</div>
+      <div class="box" >BOX 2</div>
+      <div class="box" >BOX 3</div>
+    </div>
+  </div>
+</body>
+</html>
