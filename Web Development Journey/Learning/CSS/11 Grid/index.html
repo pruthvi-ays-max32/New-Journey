@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Grid</title>
+  <link rel="Stylesheet" href="Style.css">
+</head>
+<body>
+  <h1>Grid Properties</h1>
+  <h4>[Multi D layout for arranging item.]</h4>
+  <div class="main-container">
+    <div class="grid-container-prop">
+      <table border="1">
+        <caption>Grid Container Properties</caption>
+        <tr>
+          <th>Grid Property</th>
+          <th>Details</th>
+          <th>Example</th>
+        </tr>
+
+        <tr>
+          <td>gap(row-gap, column-gap)</td>
+          <td>it defines the gap between grid items.</td>
+          <td>row-gap:20px;</td>
+        </tr>
+
+        <tr>
+          <td>grid-template-columns</td>
+          <td>define width of each column</td>
+          <td><pre>grid-template-columns:1fr 1fr 2fr ...  ;  
+            (no of values = no of columns. [fr=fraction])
+            grid-template-columns:repeat(4, 1fr);[repeat 4 times 1fr]
+          </pre>
+          </td>
+        </tr>
+
+        <tr>
+          <td>grid-template-rows</td>
+          <td>define height of each row</td>
+          <td>grid-template-rows : 1fr 2fr 200px; remaining rows will take default height.(default height can be given by [grid-auto-rows:150px;])</td>
+        </tr>
+
+        <tr>
+          <td>justify-content</td>
+          <td>align content of grid on x-axis</td>
+        </tr>
+
+        <tr>
+          <td>align-content</td>
+          <td>align content of grid on y-axis</td>
+        </tr>
+
+        <tr>
+          <td>align-items</td>
+          <td>align content of grid-item on y-axis inside div of that grid-item.</td>
+        </tr>
+      </table>
+    </div>
+    <div class="grid-child-prop">
+      <table border="1">
+        <caption>Grid Child/Item Properties</caption>
+
+        <tr>
+          <th>Grid Property</th>
+          <th>Details</th>
+          <th>Example</th>
+        </tr>
+        
+        <tr>
+          <td>grid-column</td>
+          <td>in how many columns that child should display.</td>
+          <td>grid-column-start:1 ; grid-column-end:3;  OR grid-column:1/3;</td>
+        </tr>
+
+        <tr>
+          <td>grid-row</td>
+          <td>in how many rows that child should display.</td>
+          <td>grid-row-start:1 ; grid-row-end:3;  OR grid-row:1/3; OR grid-row:1/span 3 (span 3 : 3 spans it will occupie)</td>
+        </tr>
+
+        <tr>
+          <td>grid-area</td>
+          <td>in how many rows and columns that child should display.</td>
+          <td>grid-area : row-start / col-start / row-end / col-end</td>
+        </tr>
+
+        <tr>
+          <td>grid-template-area</td>
+          <td>We can give names to each item.</td>
+          <td><pre>grid-template-areas : "header header header"
+                    "sidebar main main"
+                    "sidebar main main"
+                        "footer footer footer";
+
+                        #box1{
+                          grid-areas:header; (box1 will occupie whole place of
+                                           header in grid template area.)
+                        }
+                                  </pre>
+          </td>
+        </tr>
+
+        <tr>
+          <td>justify-self</td>
+          <td>to move perticular item's content on x-axis</td>
+        </tr>
+
+        <tr>
+          <td>align-self</td>
+          <td>to move perticular item's content on y-axis</td>
+        </tr>
+      </table>
+    </div>
+  </div>
+</body>
+</html>

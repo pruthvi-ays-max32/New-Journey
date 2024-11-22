@@ -1,0 +1,35 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  background-color:antiquewhite;
+}
+
+body{
+  font-family: cursive;
+  text-align: center;
+}
+
+
+.box{
+  border: 2px solid black;
+  margin: 10px;
+  width:330px;
+  height: 330px;
+  background-color: yellow;
+  display: inline-block;
+}
+
+/* can add mulitple conditions using and, or etc. */
+@media screen and (max-width:768px) and (min-width:500px){
+  .container{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  .box{
+    background-color: red;
+    display: block;
+  }
+}
