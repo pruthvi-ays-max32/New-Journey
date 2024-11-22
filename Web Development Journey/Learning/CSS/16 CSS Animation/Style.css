@@ -1,0 +1,82 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  background-color:antiquewhite;
+}
+
+body{
+  font-family: cursive;
+  text-align: center;
+}
+.main-container{
+  border: 2px solid gray;
+  display: flex;
+}
+.container{
+  margin: 50px;
+  min-width: 300px;
+  height: 300px;
+  border: 2px solid black;
+  border-radius: 50%;
+  /* CSS Animation */
+  animation: orbit 3s ease-in-out 0s infinite normal;
+}
+
+.box{
+  background-color:aqua;
+  height: 100px;
+  width: 100px;
+  border-radius: 50%; 
+  /* CSS Animation */
+  /* animation-name: orbit; */
+  animation-duration: 3s;
+  animation-timing-function: ease-in-out;
+  animation-delay: 0s;
+  animation-iteration-count: infinite;
+  animation-direction:alternate;
+}
+
+@keyframes round {
+  0% {
+    transform:translate(0, 0);
+  }
+  25% {
+    transform: translate(200px, 0);
+  }
+  50% {
+    transform: translate(200px, 200px);
+  }
+  75% {
+    transform: translate(0, 200px);
+  }
+}
+
+@keyframes orbit {
+  from{
+    transform: rotate(0);
+  }
+  to{
+    transform: rotate(360deg);
+  }
+}
+
+ul{
+  list-style-type:none;
+}
+
+h4{
+  text-align: center;
+  text-decoration:underline;
+  background-color: aqua;
+  display: inline;
+}
+h3{
+  text-align: left;
+}
+
+.keyframe-mean{
+  display: flex;
+  justify-content: center;
+  margin-top: 20px;
+}

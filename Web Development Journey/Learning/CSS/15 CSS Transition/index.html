@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>CSS Transition</title>
+  <link rel="stylesheet" href="Style.css">
+</head>
+<body>
+  <h1>CSS Transition</h1>
+  <h5>css transition allow you to change property values smoothly, over a given duration.</h5>
+
+  <div class="container">
+    <div id="box">
+       
+    </div>
+    <div class="tables">
+      <table border="1">
+        <tr>
+          <th>Property</th>
+          <th>Meaning</th>
+        </tr>
+
+        <tr>
+          <td>transition-property</td>
+          <td>write down which properties we have to do transition. (all, perticular prop also.)</td>
+        </tr>
+
+        <tr>
+          <td>transition-duration : total time in which transition should take place</td>
+        </tr>
+
+        <tr>
+          <td>transition-timing-function : speed control of transition.</td>
+          <td><ul>
+            <li>ease : start slow then fast and end slow</li>
+            <li>ease-in : slow start</li>
+            <li>ease-out : slow end</li>
+            <li>ease-in-out : slow start and slow end</li>
+            <li>linear : same speed </li>
+            <li>cubic-bezier(n,n,n,n) : let u define your own values.</li>
+
+          </ul></td>
+        </tr>
+
+        <tr>
+          <td>transition-delay</td>
+          <td>After how many seconds transition should start.</td>
+        </tr>
+
+        <tr>
+          <td>transition : we can define all 4 prop at once.</td>
+          <td>transition : transition-property transition-duration transition-timing-function transition-delay</td>
+        </tr>
+      </table>
+    </div>
+  </div>
+</body>
+</html>

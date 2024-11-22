@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Pseudo Classes</title>
+  <link href="Style.css" rel="Stylesheet">
+</head>
+<body>
+  <h1> Pseudo Classes and Elements </h1>
+  <h5>[Spacial State of element.]</h5>
+  <div class="container">
+    <div>
+      <h3> Types of pseudo Class</h3>
+      <table border="1">
+        <tr>
+          <th>Property</th>
+          <th>value</th>
+        </tr>
+
+        <tr>
+          <td>hover</td>
+          <td>Works When we move cursor on element</td>
+        </tr>
+        <tr>
+          <td>link</td>
+          <td>Select all universal link. </td>
+        </tr>
+        <tr>
+          <td>Active</td>
+          <td>Works When we move cursor on element and click the button.</td>
+        </tr>
+
+        <tr>
+          <td>Visited</td>
+          <td>Works When we clicked that button in browser previously at least once. (In ignozite mode it will not work because it doesn't store the history.)</td>
+        </tr>
+
+        <tr>
+          <td>nth-child</td>
+          <td>"x:nth-child(n)"Select every x elements that is the nth child of its parent</td>
+          <td>
+            it supports "an+b" -> where a and b are variables.(just change the n value here from 0 to infinite it will select those elements)
+            eg. suppose we have to select all odd number rows from list then "nth-child(2n+1)" etc.
+          </td>
+        </tr>
+
+        <tr>
+          <td>first-child</td>
+          <td>"x:first-child" -> Select every x elements that is the first child of its parent</td>
+        </tr>
+        <tr>
+          <td>last-child</td>
+          <td>"x:last-child" -> Select every x elements that is the last child of its parent</td>
+        </tr>
+      </table>
+    </div>
+    <div>
+      <ul>
+        <li>First</li>
+        <li>Second</li>
+        <li>Third</li>
+        <li>Fourth</li>
+        <li>Fifth</li>
+      </ul>
+    </div>
+    <br>
+    <br>
+    <div>
+      <ul>
+        <li>First</li>
+        <li>Second</li>
+        <li>Third</li>
+        <li>Fourth</li>
+        <li>Fifth</li>
+      </ul>
+    </div>
+    </div>
+
+  <div class="pseudo-element">
+    <h2>Pseudo Elements are used to style specified parts of element.</h2>
+    <h5>Eg. first letter of first Word in paragraph. we use "::" for this.</h5>
+    <table border="1">
+      <caption>Types of Pseudo Elements</caption>
+      <tr>
+        <th>Property</th>
+        <th>value</th>
+        <th>Example</th>
+      </tr>
+
+      
+      <tr>
+        <td>Selection</td>
+        <td>If we try to select any text from our page it will show these properties which we define here. eg. selected text will show background color, color which we will define here.</td>
+        <td>::selection{background-color : red} -> it will show bg-color red for selected text on page. </td>
+      </tr>
+
+      <tr>
+        <td>first-letter</td>
+        <td>To Style first letter of any word.</td>
+        <td>h1::first-letter{font-size : 30px} -> it will change the font-size of first letter of every h1 tag on page</td>
+      </tr>
+      <tr>
+        <td>first-line</td>
+        <td>To style first line of any paragraph.</td>
+        <td>p::first-line{} -> it will style the first line of p tag.</td>
+      </tr>
+      <tr>
+        <td>Before</td>
+        <td>If we wanted to display something just before any element. then we use before. but this will not be part of our DOM it will only display but can't be select. It has special property <b>content:""</b> where we define what we want to display.</td>
+        <td>h3::before{content:"required"} -> it will display required before every h3 tag.</td>
+      </tr>
+
+      <tr>
+        <td>After</td>
+        <td>If we wanted to display something just after any element. then we use after. but this will not be part of our DOM it will only display but can't be select. It has special property <b>content:""</b> where we define what we want to display.</td>
+        <td>h3::after{content:"required"} -> it will display required after every h3 tag.</td>
+      </tr>
+    </table>
+  </div>
+
+
+  </div>
+  
+</body>
+</html>

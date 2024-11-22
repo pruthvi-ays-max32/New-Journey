@@ -1,0 +1,42 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  background-color:antiquewhite;
+}
+
+body{
+  font-family: cursive;
+  text-align: center;
+}
+
+.container{
+  display: flex;
+  gap: 200px;
+  justify-content: space-evenly;
+  
+}
+
+ul>li:first-child{
+  color: red;
+}
+
+
+ul li:last-child{
+  background-color: yellowgreen;
+}
+
+ul>li:nth-child(3){
+  background-color: tomato;
+}
+
+h5::after{
+  content: "required";
+  background-color: red;
+  font-size: large;
+}
+
+h2::first-letter{
+font-size: xx-large;
+color: palevioletred;
+}

@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>CSS Animation</title>
+  <link rel="stylesheet" href="Style.css">
+</head>
+<body>
+  <h1>CSS Animation</h1>
+  <h5>CSS Allow animation of html element without using JS.</h5>
+
+  <div class="main-container">
+    <div class="container">
+      <div class="box">
+  
+      </div>
+    </div>
+    <div class="tables">
+      <table border="1">
+        <caption>Animation Properties</caption>
+        <tr>
+          <th>Property</th>
+          <th>Meaning</th>
+        </tr>
+
+        <tr>
+          <td>animation-name/td>
+          <td>here we assign name of keyframe we created for animation.</td>
+        </tr>
+
+        <tr>
+          <td>animation-duration </td>
+          <td>total time in which animation should complete one cycle.</td>
+        </tr>
+
+        <tr>
+          <td>animation-timing-function : speed control of animation.</td>
+          <td><ul>
+            <li>ease : start slow then fast and end slow</li>
+            <li>ease-in : slow start</li>
+            <li>ease-out : slow end</li>
+            <li>ease-in-out : slow start and slow end</li>
+            <li>linear : same speed </li>
+            <li>cubic-bezier(n,n,n,n) : let u define your own values.</li>
+
+          </ul></td>
+        </tr>
+
+        <tr>
+          <td>animation-delay</td>
+          <td>After how many seconds animation should start.</td>
+        </tr>
+
+        <tr>
+          <td>animation-linear-count</td>
+          <td>how many times the animation should takes place.</td>
+        </tr>
+
+        <tr>
+          <td>animation-direction</td>
+          <td>In which direction the animation should takes place.</td>
+        </tr>
+        
+        <tr>
+          <td>animation : we can define all 6 prop at once.</td>
+          <td>[transition : animation-name animation-duration animation-timing-function animation-delay animation-linear-count animation-direction]</td>
+        </tr>
+      </table>
+    </div>
+    
+  </div>
+
+  <h4>How to define the keyframe : </h4>
+  <div class="keyframe-mean">
+    <div>
+      <h3><pre>
+        @keyframe ani_name {
+          from {
+    
+          }
+    
+          to{
+    
+          }
+        }
+      </pre></h3>
+    </div>
+
+    <div>
+      <h3><pre>
+        @keyframe ani_name {
+          0% , 100% { }
+          50% { }
+          75%{ }
+        }
+      </pre></h3>
+    </div>
+    
+  </div>
+  
+  
+</body>
+</html>

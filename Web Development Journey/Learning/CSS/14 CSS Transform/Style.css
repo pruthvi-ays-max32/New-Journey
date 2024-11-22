@@ -1,0 +1,42 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  background-color:antiquewhite;
+}
+
+body{
+  font-family: cursive;
+  text-align: center;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+
+.container{
+  margin-top: 40px;
+  width: 90vw;
+  padding: 20px;
+  padding-left: 100px;
+  height: 330px;
+  border: 2px solid red;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+}
+
+#box{
+  width: 200px;
+  height: 200px;
+  margin-top: 50px;
+  border: 2px  solid black;
+  /* CSS Transform */
+  transform: rotate(30deg);
+  /* transform: scale(1.5); */
+  /* transform: skew(45deg); */
+  /* transform: translate(120px); */
+}
+
+.tables{
+  width: 600px;
+}
