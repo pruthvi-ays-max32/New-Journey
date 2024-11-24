@@ -1,0 +1,56 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: cursive;
+}
+
+:root{
+  --primary-text-color : rgb(59, 45, 45);
+  --secondary-text-color : white;
+  --highlight:yellow;
+}
+
+/* override the defualt properties for dark mode. */
+.dark{
+  --primary-text-color : rgb(245, 237, 237);
+  --secondary-text-color : black;
+  --highlight:rgb(167, 43, 170);
+}
+
+.container {
+
+  /* local Css Variable */
+  /* --highlight : rgb(237, 91, 12); */
+  padding: 40px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  border: 2px solid forestgreen ;
+  min-height: 100vh;
+  color: var(--primary-text-color);
+  background-color: var(--secondary-text-color);
+}
+
+.box {
+  width: 100%;
+  text-align: center;
+  /* use of variable */
+  /* background-color: var(--highlight); */
+  margin: 5px;
+}
+
+div>h2:nth-child(2){
+  background-color: var(--highlight);
+}
+
+h1{
+  text-align: center;
+}
+
+h2{
+  margin-bottom: 10px;
+}
