@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>DOM Manipulation</title>
+  <style>
+        .dark{
+          background-color: #000;
+          color: #fff;
+          font-size: larger;
+        }
+
+  </style>
+</head>
+<body class="dark">
+        <ul class="language">
+          <li>Javascript</li> 
+        </ul>
+</body>
+<script>
+        
+        const body = document.querySelector('body');
+        const ul = document.querySelector('.language');
+
+
+        // ADD ELEMENT
+        function addLanguage ( langName ){  
+          const li = document.createElement('li');
+          li.innerText=`${langName}`
+          ul.appendChild(li);
+        }
+        body.appendChild(ul);
+
+        function addLangInOptimizedWay(langName){
+          const li = document.createElement('li');
+          // const text = document.createTextNode(langName);
+          // li.appendChild(text);
+            // OR -> we can directly append while creating element.
+          li.appendChild(document.createTextNode(langName))
+          ul.appendChild(li);
+        }
+
+        addLanguage("Java");
+        addLanguage("Python");
+        addLanguage("GO Lang");
+        addLangInOptimizedWay("MySql");
+
+
+
+        // EDIT ELEMENT
+        
+        const secondLang = document.querySelector("li:nth-child(2)")
+        console.log(secondLang)
+
+        /*
+            1st way : Using innerText
+            secondLang.innerText = "TypeScript"
+        */
+
+        //  secondLang.innerText = "TypeScript"
+
+        /*
+            2nd way : Using outerHTML
+            secondLang.outerHTML = "<li>Node JS</li>"
+        */
+
+        // secondLang.outerHTML = "<li>Node JS</li>"
+
+        /*
+            3rd way : create new element and replace it (use replaceWith)
+        */
+
+        const newli = document.createElement('li');
+        newli.textContent = "TypeScript"
+
+        secondLang.replaceWith(newli)
+        
+
+        // REMOVE
+        const last_element = document.querySelector('li:last-child')
+        // using remove method.
+        last_element.remove();
+
+
+</script>
+
+</html>
