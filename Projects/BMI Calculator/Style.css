@@ -1,0 +1,55 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.dark {
+  background-color: #000;
+  color: #fff;
+}
+
+.main-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  width: 100vw;
+  text-align: center;
+}
+
+h3 {
+  margin-top: 40px;
+  text-decoration: underline;
+  text-decoration-color: tomato;
+}
+
+
+.box {
+  background-color: slategray;
+  display: flex;
+  justify-content: center;
+  align-items: start;
+  height: 500px;
+  width: 400px;
+}
+
+.bmiform {
+  border: 2px solid black;
+  margin-top: 30px;
+  height: 400px;
+  width: 300px;
+  background-color: darkcyan;
+}
+
+#form {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-top: 20px;
+}
+
+.footer {
+  margin-bottom: 20px;
+}
