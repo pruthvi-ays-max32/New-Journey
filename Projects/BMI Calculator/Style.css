@@ -34,6 +34,14 @@ h3 {
   width: 400px;
 }
 
+#clock{
+  margin-top: 5px;
+  margin-right: 10px;
+  float: right;
+  background-color:burlywood ;
+  color: black;
+}
+
 .bmiform {
   border: 2px solid black;
   margin-top: 30px;

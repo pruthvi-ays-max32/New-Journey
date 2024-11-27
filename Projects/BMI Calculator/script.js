@@ -1,5 +1,12 @@
 const form = document.querySelector("#form")
 
+const clock = document.querySelector("#clock");
+
+setInterval(()=>{
+  const date = new Date();
+  clock.innerHTML = date.toLocaleTimeString();
+},1000)
+
 form.addEventListener('submit', (e) => {
   e.preventDefault();
   const height = parseFloat(document.querySelector('#ht').value);
