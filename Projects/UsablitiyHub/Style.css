@@ -98,6 +98,7 @@ ul{
     max-width: 1180px;
     margin-inline: auto;
     padding-inline: var(--padding-inline-section);
+    overflow: hidden;
 }
 
 /* Banner Text */
@@ -118,6 +119,7 @@ ul{
 .nav-container{
     margin-top: 15px;
     justify-content: space-between;
+    position: relative;
 }
 
 .logo-img{
@@ -130,6 +132,10 @@ ul{
     justify-content: end;
     gap: 40px;
 }
+
+.nav-toggle{
+    display: none;
+  }
 
 .hower-links{
     color: var(--primary-text-color);
@@ -152,7 +158,7 @@ header{
 }
 
 .right-header img{
-   width: 600px;
+   width: 100%;
 }
 
 .left-header{
@@ -176,8 +182,9 @@ header{
 }
 
 .logos{
-    justify-content: space-between;
+    justify-content: space-evenly;
     flex-wrap: wrap;
+    gap: 20px;
 }
 
 .logo{
@@ -196,6 +203,7 @@ header{
 
 .features-header{
     text-align: center;
+    margin-bottom: 40px;
 }
 
 .features-header h2{
@@ -207,7 +215,7 @@ header{
     margin-top: 20px;
     flex-wrap: wrap;
     justify-content: space-between;
-    gap: 40px;
+    gap: 20px;
 }
 
 .features-card{
@@ -235,14 +243,24 @@ header{
 
 /* Examples  */
 
+.examples-section{
+    padding: 80px var(--padding-inline-section);
+}
+
 .example-section-header{
    flex-direction: column;
    gap: 20px;
 }
 
+.examples {
+    justify-content: space-between;
+    margin-block: 30px;
+    flex-wrap: wrap;
+}
+
 .example-card{
     position: relative;
-    min-height: 300px;
+    height: 300px;
     width: 23%;
     background: black;
     background: linear-gradient(rgb(0,0,0,0.1), rgb(0,0,0,0.8)) ,url('Assets/asset\ 30.svg');
@@ -251,12 +269,6 @@ header{
 
 .example-card:hover{
     box-shadow: 0 0 10px #888;
-}
-
-.examples {
-    justify-content: center;
-    gap: 20px;
-    margin: 30px 0;
 }
 
 .card-text{
@@ -288,6 +300,7 @@ header{
     flex-direction: column;
     gap: 30px;
     color: white;
+    text-align: center;
 }
 
 .cta-section{
@@ -322,10 +335,10 @@ footer{
 .sub-footer-links{
     justify-content: center;
     gap: 20px;
+    flex-wrap: wrap; 
 }
 
 .sub-footer{
     background-color: #b9cde4;
     padding: var(--padding-inline-section);
-
 }
