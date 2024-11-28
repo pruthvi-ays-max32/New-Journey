@@ -60,6 +60,11 @@ const displayGuess = () => {
   document.querySelector('#num').value = ""
 }
 
+
+const displayMsg = (msg) => {
+  LowORHigh.innerHTML = msg;
+}
+
 const endGame = () => {
   pre_g_array = [];
   Pre_G.innerHTML = [];
@@ -83,88 +88,3 @@ const restartGame = () => {
   console.log("new random : " , randomNumber)
   rem_guess = 9
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-// const checkGuess = (guess) => {
-//   if(guess === num) {
-//     displayMsg("Congratulation !!! Your Guess Is Right.")
-//     rem_guess--;
-//     displayGuess(rem_guess)
-//   }
-//   else if(guess < num){
-//     displayMsg("Your Guess is Lower than Number.");
-//     pre_g_array.push(guess);
-//     rem_guess--;
-//     displayGuess(rem_guess)
-//   }
-//   else{
-//     displayMsg("Your Guess is Higher than Number.");
-//     pre_g_array.push(guess);
-//     rem_guess--;
-//     displayGuess(rem_guess);
-//   }
-// }
-
-// const displayGuess = (rem) =>{
-//   if(rem<=0){
-//     endGame();
-//   } else{
-//     Pre_G.innerHTML = pre_g_array;
-//     Rem_G.innerHTML = rem;
-//   }
-// }
-
-const displayMsg = (msg) => {
-  LowORHigh.innerHTML = msg;
-}
-
-
-// const endGame = () =>{
-//   displayMsg(`You Loss, Number is ${num} !!! End Game.`)
-//   Pre_G.innerHTML = [];
-//   Rem_G.innerHTML = 10;
-//   playgame = false;
-// }
-
-// const restartGame = () =>{
-
-// }
