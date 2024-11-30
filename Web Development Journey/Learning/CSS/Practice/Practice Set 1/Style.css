@@ -1,0 +1,41 @@
+/* 
+                  Practice Set Level 1
+
+          1. Create a heading and set the text color red.
+          2. create a div with id #heading include CSS using all 3 ways line, style tag and external css and observe priority.
+          3. Add Comments to your CSS class.
+          4. Create a div, paragraph and heading and use id selector , element selector and class selector for them.
+          5. Create two divs with id first and second and define color for both using group selector.
+*/
+
+h1{
+  text-align: center;
+  color: red;
+}
+
+#heading {
+  background-color: bisque;
+}
+
+/* Id Selector */
+#id-selector{
+  background-color: pink;
+}
+
+/* Class Selector */
+.class-selector{
+  color: blueviolet;
+}
+
+/* Element Selector */
+h3{
+  font-family: cursive;
+}
+
+/* Group Selector */
+#first, #second {
+  display: inline-block;
+  height: 200px;
+  width: 200px;
+  background-color: burlywood;
+}

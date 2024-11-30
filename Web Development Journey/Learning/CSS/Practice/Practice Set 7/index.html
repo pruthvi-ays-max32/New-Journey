@@ -1,0 +1,49 @@
+<!-- 
+                        Practice Set Level 7 (Animation)
+-->
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>CSS practice set 7</title>
+  <style>
+      .progress-container{
+        width: 90%;
+        background-color: antiquewhite;
+        border: 2px solid black;
+        border-radius: 20px;
+        height: 25px;
+        position:relative;
+        left: 4%;
+        top: 250px;
+      }
+
+      .progress-bar{
+        height: 100%;
+        border-radius:20px;
+        background-color: red;
+        animation: progress 2s ease-in;
+      }
+
+
+      @keyframes progress {
+        0%{ width: 0%;}
+        25%{width: 25%;}
+        50%{width: 50%;}
+        75%{width: 75%;}
+        100%{width: 100%;}
+      }
+
+  </style>
+</head>
+<body>
+    <div class="progress-container">
+      <div class="progress-bar">
+
+      </div>
+    </div>
+</body>
+</html>

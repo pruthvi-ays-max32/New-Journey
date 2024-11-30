@@ -1,0 +1,85 @@
+/* 
+              Practice Set Level 5
+              
+        1. Create a webpage with header , footer and a content area.
+        2. header - Create a nav bar with links.
+        3. main - create a div with width and height, background color green and border radius 50%
+            - Create a three divs with container height and width 100px. DIsplay inline block.
+            - Set the correct position property for the single div element to ensure it remains at the right side of the page and does not shift when scrolling.
+            - use z-index to place the div on top of another div.
+        4. Footer - add text in footer.
+*/
+
+
+
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+header{
+  position: fixed;
+  top: 0;
+  width: 100vw;
+  height: 50px;
+  background-color: antiquewhite;
+  color: #000;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+a{
+  background-color: yellow;
+  text-decoration: none;
+}
+
+.div{
+  text-align: center;
+  width: 200px;
+  height: 200px;
+  background-color: green;
+  border-radius: 50%;
+}
+
+main{
+  width: 100vw;
+}
+
+#div1{
+ width: 100%;
+ margin-top: 20px;
+ border: 2px solid black;
+}
+
+.div1{
+  width: 100px;
+  height: 100px;
+  background-color: yellow;
+  display: inline-block;
+  border: 2px solid black;
+  margin: 2px;
+}
+
+.box1{
+  position: fixed;
+  right: 20px;
+  border: 4px solid black;
+  background-color: violet;
+  width: 100px;
+  height: 100px;
+  text-align: center;
+}
+
+.index{
+  position: relative;
+  z-index: 1;
+  background-color:red;
+}
+
+footer{
+  position: fixed;
+  bottom: 0;
+  background-color: antiquewhite;
+}

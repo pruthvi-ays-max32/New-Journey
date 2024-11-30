@@ -1,0 +1,30 @@
+/* 
+                    Practice set Level 2 (Color System and Background)
+
+              1. Create a div bar wih text and background color with opacity.
+              2. Change the color of the main content 
+              3. Add background image to one div
+              4. use background shorthand property.
+*/
+
+
+.bar{
+  background-color: yellow;
+  /* a -> to change opacity. transparency of text-color. */
+  color: rgba(201, 103, 67, 0.9);
+}
+
+main{
+  background-color: antiquewhite;
+}
+.image{
+  height: 500px;
+  width: 1000px;
+  background-color: plum;
+  background-image: url('asset\ 6.webp');
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: right;
+
+  /* Background Image Short Hand Property.->   background : bg-color image-url repeat attachment position.*/
+}

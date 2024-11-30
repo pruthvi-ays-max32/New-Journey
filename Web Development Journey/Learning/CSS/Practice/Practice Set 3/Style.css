@@ -1,0 +1,34 @@
+/* 
+                Practice Set Level 3
+          1. Create a heading at the center and make capitalized.
+          2. Use font family for the whole page to TImesNewRoman
+          3. Create one div inside another div, set id and text outer to outer div and inner to inner div. set outer div text size to 25px and inner to 10px.
+          4. Use icons form fontawesome.com and use icon fo linkedin and github.
+*/
+
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body{
+  text-align: center;
+  font-family: 'Times New Roman', Times, serif;
+}
+
+h1{
+  text-transform: capitalize;
+}
+
+#outer{
+  font-size: 25px;
+  background-color: yellowgreen;
+  padding: 200px;
+}
+
+#inner{
+font-size: 10px;
+background-color: antiquewhite;
+padding: 20px;
+}
