@@ -1,0 +1,7 @@
+1. Define a Student class with fields like name and age, and use toString to print student details.
+2. Concatenate and Convert: Take two strings, concatenate them, and convert the result to uppercase.
+3. Calculate the area and circumference of a circle for a given radius using Math.Pl
+4. Simulate a dice roll using Math.random() and display the outcome (1 to 6).
+5. Create a number guessing game where the program selects a random number, and the user has to guess it.
+6. Take an array of words and concatenate them into a single string using StringBuilder.
+7. Create an 0b ect with final fields and a constructor to initialize
