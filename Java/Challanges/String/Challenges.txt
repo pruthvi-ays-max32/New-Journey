@@ -4,4 +4,4 @@
 4. Simulate a dice roll using Math.random() and display the outcome (1 to 6).
 5. Create a number guessing game where the program selects a random number, and the user has to guess it.
 6. Take an array of words and concatenate them into a single string using StringBuilder.
-7. Create an 0b ect with final fields and a constructor to initialize
+7. Create an object with final fields and a constructor to initialize them. 
