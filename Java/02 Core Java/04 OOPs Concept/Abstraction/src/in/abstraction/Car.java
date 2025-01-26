@@ -9,4 +9,10 @@ public class Car extends Vehicle{
 	public void sound() {
 		System.out.println("Vroooooom .....");
 	}
+
+	// implementation of abstract method present in Interface.
+	@Override
+	public void getSetGo() {
+		System.out.println("Here we come ... ");	
+	}
 }

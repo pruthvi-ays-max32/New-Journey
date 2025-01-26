@@ -16,6 +16,10 @@ public class AbstractTest {
 		cr.stop();
 		System.out.println(cr.getNoOfTyers());
 		cr.sound();
+		
+		cr.getSetGo();
+		
+		System.out.println();
 
 	}
 }
